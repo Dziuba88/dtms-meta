@@ -1,0 +1,32 @@
+@if $colors-asset == true {
+  /*! GOOGLE COLORS url: http://www.google.com/design/spec/style/color.html */
+  @each $color_name, $color in $colors {
+    @each $color_type, $color_value in $color {
+      @if $color_type == '500' {
+        .bg-#{$color_name} {
+          background-color: $color_value !important;
+        }
+        .text-#{$color_name} {
+          color: $color_value !important;
+        }
+      }
+      @else if $color_name != "shades" {
+        .bg-#{$color_name}__#{$color_type} {
+          background-color: $color_value !important;
+        }
+        .text-#{$color_name}__#{$color_type} {
+          color: $color_value !important;
+        }
+      }
+    }
+  }
+  // Shade classes
+  @each $color, $color_value in $shades {
+    .bg-#{$color} {
+      background-color: $color_value !important;
+    }
+    .text-#{$color} {
+      color: $color_value !important;
+    }
+  }
+}

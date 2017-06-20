@@ -1,0 +1,240 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Locations'
+block content
+  .page-header
+    .container
+      .row
+        .col.md-10
+          h1 Our Locations In Brooklyn, NY
+          p We strive to deliver a form of medical care that is uncommon among our competitors. Instead of shuffling patients in and out of our offices, we stand committed to administering a high level of patient care — a commitment that starts with thoroughly examining and communicating with our patients to see that no diagnostic stone is left unturned. 
+
+  .locations-page
+    .container
+      // locations tabs
+      ul.nav-tabs(role='tablist')
+        li.active(role='presentation')
+          a(href='#sheepshead', aria-controls='sheepshead', role='tab', data-toggle='tab', aria-expanded="true") 
+            svg.icon: use(xlink:href="#location")
+            span Sheepshead Bay
+        li(role='presentation')
+          a(href='#flatbush', aria-controls='flatbush', role='tab', data-toggle='tab', aria-expanded="false") 
+            svg.icon: use(xlink:href="#location")
+            span Flatbush
+        li(role='presentation')
+          a(href='#brooklyn', aria-controls='brooklyn', role='tab', data-toggle='tab', aria-expanded="false") 
+            svg.icon: use(xlink:href="#location")
+            span Downtown Brooklyn
+
+      // locations panes
+      .tab-content
+        #sheepshead.tab-pane.active
+          .row
+            .col.sm-5
+              .sidebar-slider
+                .owl-carousel(data-slider-id="1")
+                  div: img(src="https://dummyimage.com/vga/221", alt="")
+                  div: img(src="https://dummyimage.com/vga/222", alt="")
+                  div: img(src="https://dummyimage.com/vga/223", alt="")
+                  div: img(src="https://dummyimage.com/vga/224", alt="")
+                  div: img(src="https://dummyimage.com/vga/225", alt="")
+                  div: img(src="https://dummyimage.com/vga/226", alt="")
+                  div: img(src="https://dummyimage.com/vga/227", alt="")
+                  div: img(src="https://dummyimage.com/vga/228", alt="")
+              h3 PROCEDURES & SERVICES
+              nav.sidebar-nav
+                ul
+                  li: a(href="#", title="title") Pain Management
+                  li: a(href="#", title="title") Smoking Cessation
+                  li: a(href="#", title="title") Immunizations
+                  li: a(href="#", title="title") Insomnia
+                  li: a(href="#", title="title") Incontinence
+                  li: a(href="#", title="title") STD\STI Testing
+                  li: a(href="#", title="title") Walk-In Care For Adults
+                  li: a(href="#", title="title") Diabetes Management
+                  li: a(href="#", title="title") Diabetic Educator and Nutritionist
+                  li: a(href="#", title="title") Physicals
+                  li: a(href="#", title="title") Urgent Medical Care
+                  li: a(href="#", title="title") Walk-In Care For Adults
+                  li: a(href="#", title="title") Diabetes Management
+                  li: a(href="#", title="title") Diabetic Educator and Nutritionist
+                  li: a(href="#", title="title") Physicals
+                  li: a(href="#", title="title") Urgent Medical Care 
+            .col.sm-7
+              h2 WE ARE MULTI-SPECIALTY CLINIC
+              p Downtown Medical Services is a Multi-Specialty clinic located in the center of Metrotech Downtown Brooklyn on 81 Willoughby Street, 4 floor. 
+              p We service our community for the past 16 years. From small one-doctor office in 1997 we grow-up to the Multi-Specialty clinic where we have 16 highly qualified physicians, Internal Medicine Department, Physical therapy and diagnostic department.
+              h2 EXPERIENCED MEDICAL DOCTORS
+              p Our experienced medical doctors, trained at some of the finest medical schools in the country, will evaluate your condition, prescribe appropriate medications, if needed, and perform specialized diagnostic testing if indicated to identify the exact location and extent of your ailment.
+              p All our doctors are board certified excellent practitioners and, most important, caring and very responsible specialists. Our main goal is to be here for you and help you to go through any health problems with great support and professionalism you need. 
+              h2 PHYSICAL THERAPY DEPARTMENT
+              p Our full time physical therapist has extensive experience in treating injuries and other physical problems. Working with our professional medical staff, they will provide a program of physical therapy based on your needs.
+              p For the long time of our life in Brooklyn Downtown community, we became a family for our patients and, I hope will be yours.
+          hr
+          .row
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#") Internal Medicine 
+                  small (Primary Care, Family Doctor)
+                li: a(href="#")  Cardiology
+                li: a(href="#")  Ophthalmology
+                li: a(href="#")  Gen & Vas Surgery
+                li: a(href="#")  Gynecology 
+                  small (Obstetrician\OBGYN)
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pulmonology 
+                  small (Lungs\Respiratory System)
+                li: a(href="#")  Gastroenterology 
+                  small (Endoscopy\Colonoscopy\Biopsy)
+                li: a(href="#")  Urology
+                li: a(href="#")  Orthopedic Surgery
+                li: a(href="#")  Neurology
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pain Management
+                li: a(href="#")  Podiatry
+                li: a(href="#")  Chiropractic
+                li: a(href="#")  Physical Therapy
+                li: a(href="#")  Dentistry
+
+        #flatbush.tab-pane
+          .row
+            .col.sm-5
+              .sidebar-slider
+                .owl-carousel(data-slider-id="1")
+                  div: img(src="https://dummyimage.com/vga/221", alt="")
+                  div: img(src="https://dummyimage.com/vga/222", alt="")
+                  div: img(src="https://dummyimage.com/vga/223", alt="")
+                  div: img(src="https://dummyimage.com/vga/224", alt="")
+                  div: img(src="https://dummyimage.com/vga/225", alt="")
+                  div: img(src="https://dummyimage.com/vga/226", alt="")
+                  div: img(src="https://dummyimage.com/vga/227", alt="")
+                  div: img(src="https://dummyimage.com/vga/228", alt="")
+              h3 PROCEDURES & SERVICES
+              nav.sidebar-nav
+                ul
+                  li: a(href="#", title="title") Pain Management
+                  li: a(href="#", title="title") Smoking Cessation
+                  li: a(href="#", title="title") Immunizations
+                  li: a(href="#", title="title") Insomnia
+                  li: a(href="#", title="title") Incontinence
+                  li: a(href="#", title="title") STD\STI Testing
+                  li: a(href="#", title="title") Walk-In Care For Adults
+                  li: a(href="#", title="title") Diabetes Management
+                  li: a(href="#", title="title") Diabetic Educator and Nutritionist
+                  li: a(href="#", title="title") Physicals
+                  li: a(href="#", title="title") Urgent Medical Care
+                  li: a(href="#", title="title") Walk-In Care For Adults
+                  li: a(href="#", title="title") Diabetes Management
+                  li: a(href="#", title="title") Diabetic Educator and Nutritionist
+                  li: a(href="#", title="title") Physicals
+                  li: a(href="#", title="title") Urgent Medical Care 
+            .col.sm-7
+              h2 WE ARE MULTI-SPECIALTY CLINIC 2
+              p Downtown Medical Services is a Multi-Specialty clinic located in the center of Metrotech Downtown Brooklyn on 81 Willoughby Street, 4 floor. 
+              p We service our community for the past 16 years. From small one-doctor office in 1997 we grow-up to the Multi-Specialty clinic where we have 16 highly qualified physicians, Internal Medicine Department, Physical therapy and diagnostic department.
+              h2 EXPERIENCED MEDICAL DOCTORS
+              p Our experienced medical doctors, trained at some of the finest medical schools in the country, will evaluate your condition, prescribe appropriate medications, if needed, and perform specialized diagnostic testing if indicated to identify the exact location and extent of your ailment.
+              p All our doctors are board certified excellent practitioners and, most important, caring and very responsible specialists. Our main goal is to be here for you and help you to go through any health problems with great support and professionalism you need. 
+              h2 PHYSICAL THERAPY DEPARTMENT
+              p Our full time physical therapist has extensive experience in treating injuries and other physical problems. Working with our professional medical staff, they will provide a program of physical therapy based on your needs.
+              p For the long time of our life in Brooklyn Downtown community, we became a family for our patients and, I hope will be yours.
+          hr
+          .row
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Internal Medicine 
+                  small (Primary Care, Family Doctor)
+                li: a(href="#")  Cardiology
+                li: a(href="#")  Ophthalmology
+                li: a(href="#")  Gen & Vas Surgery
+                li: a(href="#")  Gynecology 
+                  small (Obstetrician\OBGYN)
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pain Management
+                li: a(href="#")  Podiatry
+                li: a(href="#")  Chiropractic
+                li: a(href="#")  Physical Therapy
+                li: a(href="#")  Dentistry
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pulmonology 
+                  small (Lungs\Respiratory System)
+                li: a(href="#")  Gastroenterology 
+                  small (Endoscopy\Colonoscopy\Biopsy)
+                li: a(href="#")  Urology
+                li: a(href="#")  Orthopedic Surgery
+                li: a(href="#")  Neurology
+
+        #brooklyn.tab-pane
+          .row
+            .col.sm-5
+              .sidebar-slider
+                .owl-carousel(data-slider-id="1")
+                  div: img(src="https://dummyimage.com/vga/221", alt="")
+                  div: img(src="https://dummyimage.com/vga/222", alt="")
+                  div: img(src="https://dummyimage.com/vga/223", alt="")
+                  div: img(src="https://dummyimage.com/vga/224", alt="")
+                  div: img(src="https://dummyimage.com/vga/225", alt="")
+                  div: img(src="https://dummyimage.com/vga/226", alt="")
+                  div: img(src="https://dummyimage.com/vga/227", alt="")
+                  div: img(src="https://dummyimage.com/vga/228", alt="")
+              h3 PROCEDURES & SERVICES
+              nav.sidebar-nav
+                ul
+                  li: a(href="#", title="title") Pain Management
+                  li: a(href="#", title="title") Smoking Cessation
+                  li: a(href="#", title="title") Immunizations
+                  li: a(href="#", title="title") Insomnia
+                  li: a(href="#", title="title") Incontinence
+                  li: a(href="#", title="title") STD\STI Testing
+                  li: a(href="#", title="title") Walk-In Care For Adults
+                  li: a(href="#", title="title") Diabetes Management
+                  li: a(href="#", title="title") Diabetic Educator and Nutritionist
+                  li: a(href="#", title="title") Physicals
+                  li: a(href="#", title="title") Urgent Medical Care
+                  li: a(href="#", title="title") Walk-In Care For Adults
+                  li: a(href="#", title="title") Diabetes Management
+                  li: a(href="#", title="title") Diabetic Educator and Nutritionist
+                  li: a(href="#", title="title") Physicals
+                  li: a(href="#", title="title") Urgent Medical Care 
+            .col.sm-7
+              h2 WE ARE MULTI-SPECIALTY CLINIC 3
+              p Downtown Medical Services is a Multi-Specialty clinic located in the center of Metrotech Downtown Brooklyn on 81 Willoughby Street, 4 floor. 
+              p We service our community for the past 16 years. From small one-doctor office in 1997 we grow-up to the Multi-Specialty clinic where we have 16 highly qualified physicians, Internal Medicine Department, Physical therapy and diagnostic department.
+              h2 EXPERIENCED MEDICAL DOCTORS
+              p Our experienced medical doctors, trained at some of the finest medical schools in the country, will evaluate your condition, prescribe appropriate medications, if needed, and perform specialized diagnostic testing if indicated to identify the exact location and extent of your ailment.
+              p All our doctors are board certified excellent practitioners and, most important, caring and very responsible specialists. Our main goal is to be here for you and help you to go through any health problems with great support and professionalism you need. 
+              h2 PHYSICAL THERAPY DEPARTMENT
+              p Our full time physical therapist has extensive experience in treating injuries and other physical problems. Working with our professional medical staff, they will provide a program of physical therapy based on your needs.
+              p For the long time of our life in Brooklyn Downtown community, we became a family for our patients and, I hope will be yours.
+          hr
+          .row
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pain Management
+                li: a(href="#")  Podiatry
+                li: a(href="#")  Chiropractic
+                li: a(href="#")  Physical Therapy
+                li: a(href="#")  Dentistry
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Internal Medicine 
+                  small (Primary Care, Family Doctor)
+                li: a(href="#")  Cardiology
+                li: a(href="#")  Ophthalmology
+                li: a(href="#")  Gen & Vas Surgery
+                li: a(href="#")  Gynecology 
+                  small (Obstetrician\OBGYN)
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pulmonology 
+                  small (Lungs\Respiratory System)
+                li: a(href="#")  Gastroenterology 
+                  small (Endoscopy\Colonoscopy\Biopsy)
+                li: a(href="#")  Urology
+                li: a(href="#")  Orthopedic Surgery
+                li: a(href="#")  Neurology

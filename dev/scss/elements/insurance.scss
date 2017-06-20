@@ -1,0 +1,16 @@
+.insurance {
+  &-page {
+    border-bottom: 1px solid #d2d7df;
+    padding-bottom: 40px;
+  }
+
+  &-panel {
+    background-color: #f1f3f5;
+    border-radius: 8px;
+    padding: 30px 40px;
+
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+  -moz-box-sizing: $boxmodel;
+  box-sizing: $boxmodel;
+}
+
+// Box shadow
+@mixin shadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow: $property;
+  box-shadow: $property;
+}
+
+// Transition
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  transition: $property;
+}
+
+// Transform
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  transform: $property;
+}
+
+// Utilities
+@import "mixins/colors";
+@import "mixins/typography";
+@import "mixins/gradients";

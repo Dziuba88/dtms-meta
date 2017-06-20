@@ -1,0 +1,74 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Services'
+block content
+  .page-header
+    .container
+      .row
+        .col.md-10
+          h1 Cosmetics, Fillers & Botox
+
+  .services-page
+    .container
+      .row
+        .col.sm-8
+          .services-page__body
+            h2 Injectables and Skin Fillers
+            p: img(src="https://dummyimage.com/320x280", alt="")
+            p Injectable skin fillers have added new dimensions to the field of cosmetic dermatology, allowing new forms of facial rejuvenation and wrinkle treatment without surgery. Injectable skin and wrinkle fillers are used to increase tissue volume (as with lip augmentation), reduce wrinkles, and improve skin’s overall contour.
+            p Although topical products help us to fight aging skin sometimes is not enough, that is why many people are turning to dermal fillers.
+            p But before rushing out to get your fix of botox you need to make sure that you are doing it for the right reasons. Sometimes the result is not what we expect and that can leave us feeling even worst.
+            p Cosmetic injections are the choice for many of us, that are looking for alternative ways to rejuvenate the skin, but don't want to resort to plastic surgery. The results can be seen immediately with most fillers, not to mention that they are cheaper and quicker.
+            h2 BOTOX® Cosmetic
+            p BOTOX® Cosmetic temporarily diminishes or eliminates lines and wrinkles on the face, and it has become a popular wrinkle treatment among patients who want to address moderate signs of aging. BOTOX® Cosmetic works by relaxing the facial muscles that contract and cause lines and wrinkles to form. The treatment is usually quick, taking about 10 minutes in most cases. Because the results of a BOTOX® treatment last an average of three to six months, touchup treatments are usually necessary.
+            h2 Juvederm®
+            p Hyaluronic acid has become accepted-and even preferred-for use in wrinkle treatment. However, some people have allergic reactions to hyaluronic acid products synthesized from bovine or avian tissue. Juvederm® is made of biosynthesized, non-animal hyaluronic acid, so it is free of allergens that may cause adverse reactions in some patients. Juvederm® offers the same cosmetic benefits provided by animal-based hyaluronic acid skin fillers, but without the risk of allergic reaction. Juvederm® comes in several concentrations for treatment of different types of wrinkles and creases.
+            h2 Radiesse™ (Formerly Radiance™)
+            p Radiesse™ is an injectable skin filler that contains microspheres comprised mainly of calcium and phosphate ions, which occur naturally in the human body. After Radiesse™ is injected, thin tissue forms around the microspheres, filling wrinkles and creating a semi-permanent support structure for the skin. Results may last up to two years or more, though touchup procedures may be neededther sexually transmitted diseases, including HIV.
+        .col.sm-4
+          nav.services__list
+            ul
+              li: a(href="service.html", title="Primary Care facility").services__panel
+                span.services__panel--title Primary Care facility
+                span.services__panel--intro New concept of providing comprehensive acute and chronic medical care, urgent care for the entire family.
+              li: a(href="#", title="Cosmetics, Fillers & Botox").services__panel.active
+                span.services__panel--title Cosmetics, Fillers & Botox
+                span.services__panel--intro Skincare solutions from skincare experts. Enter the world of professional skincare treatments...
+              li: a(href="#", title="sleep & feel better").services__panel
+                span.services__panel--title sleep & feel better
+                span.services__panel--intro We are using innovative methods for the care and wellness of the ear, nose, throat and parts of the head and neck.
+              li: a(href="#", title="Expert Dentistry").services__panel
+                span.services__panel--title Expert Dentistry
+                span.services__panel--intro From teeth whitening to full mouth reconstruction, We cover all the bases to produce healthy, quality smiles. A new world of treatments require a bit less bravery.
+          
+      hr
+      .row.whyus-services
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#") Internal Medicine 
+              small (Primary Care, Family Doctor)
+            li: a(href="#")  Cardiology
+            li: a(href="#")  Ophthalmology
+            li: a(href="#")  Gen & Vas Surgery
+            li: a(href="#")  Gynecology 
+              small (Obstetrician\OBGYN)
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#")  Pulmonology 
+              small (Lungs\Respiratory System)
+            li: a(href="#")  Gastroenterology 
+              small (Endoscopy\Colonoscopy\Biopsy)
+            li: a(href="#")  Urology
+            li: a(href="#")  Orthopedic Surgery
+            li: a(href="#")  Neurology
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#")  Pain Management
+            li: a(href="#")  Podiatry
+            li: a(href="#")  Chiropractic
+            li: a(href="#")  Physical Therapy
+            li: a(href="#")  Dentistry
+
+
+

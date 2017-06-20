@@ -1,0 +1,44 @@
+label, input, textarea {
+  display: block;
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 30px;
+
+  label {
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $primary-color;
+
+    &.error {
+      color: #e74542;
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: none;
+      margin: 5px 0;
+    }
+  }
+
+  input, textarea {
+    resize: none;
+    background-color: #fff;
+    border: 1px solid #d2d7df;
+    padding: 10px;
+    transition: $animation-fast;
+    border-radius: 5px;
+
+    &.error {
+      border: 1px solid #e74542;
+    }
+  }
+
+  input {
+    height: 40px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}

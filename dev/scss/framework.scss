@@ -1,0 +1,43 @@
+@import "defaults/mixins";
+@import "defaults/variables";
+@import "defaults/normalize";
+/* ------ CORE CSS ------ */
+@import "defaults/defaults";
+//@import "components/main";
+@import "defaults/grid";
+@import "defaults/typography";
+
+/* ------ CORE COMPONENTS ------ */
+@import "components/footer";
+@import "components/navs";
+@import "components/navbar";
+@import "components/tabs";
+@import "components/labels";
+@import "components/forms";
+@import "components/owl.carousel";
+
+
+
+//@import "components/preloader";
+//@import "components/dropdowns";
+//@import "components/re_tabs";
+//@import "components/breadcrumbs";
+//@import "components/panels";
+//@import "components/daterangepicker";
+//@import "components/responsive-tables";
+//@import "components/switches";
+//@import "components/tooltips";
+//@import "components/labels";
+
+
+/* ------ SITE ELEMENTS ------ */
+@import "elements/wells";
+@import "elements/services";
+@import "elements/locations";
+@import "elements/aboutus";
+@import "elements/whyus";
+@import "elements/insurance";
+@import "elements/contacts";
+@import "elements/blog";
+
+

@@ -1,0 +1,36 @@
+.contacts-page {
+  .nav-tabs li {flex: 1;}
+
+  &__adress, &__directions {
+    margin-bottom: 30px;
+
+    p {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__directions {
+    .nav-tabs {
+      margin-bottom: 30px;
+    }
+    .nav-tabs li a {
+      justify-content: center;
+      padding: 10px;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      margin-right: 5px;
+    }
+  }
+
+
+  &__form {
+    background-color: #f1f3f5;
+    border-bottom: 1px solid #d2d7df;
+    padding: 40px 0;
+    margin-top: 40px;
+  }
+}

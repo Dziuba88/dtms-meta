@@ -1,0 +1,64 @@
+.switch {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+	user-select: none;
+
+
+  &__ctrl {
+    display: none;
+
+	~ label {
+		position: relative;
+		display: block;
+		width: 35px;
+		height: 14px;
+		background-color: #757575;
+		color: transparent;
+		border-radius: 100px;
+		cursor: pointer;
+		transition: all .2s ease-in;
+	}
+	
+	~ label:after {
+		content: '';
+		position: absolute;
+		top: -3px;
+		left: -1px;
+		display: block;
+		width: 20px;
+		height: 20px;
+		border-radius: 100px;
+		background: #fff;
+		box-shadow: 0 2px 4px 0 rgba(72, 72, 72, 0.50);
+		transition: all .2s ease-in;
+	}
+	
+	&:checked ~ label {
+		background: rgba($primary-color, .5);
+		&:after {
+			transform: translateX(16px);
+			background: $primary-color;
+		}
+	}
+	
+	&:disabled ~ label {
+		background: #F0F0F0;
+		pointer-events: none;
+		&:after {
+			background: #D1D1D1;
+			box-shadow: 0 1px 2px 0 rgba(72, 72, 72, 0.50);
+		}
+	}
+
+
+
+
+
+  }
+
+
+
+}
+.switch {
+}

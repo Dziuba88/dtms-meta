@@ -1,0 +1,138 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Why us'
+block content
+  .page-header
+    .container
+      .row
+        .col.md-10
+          h1 Neurology
+
+  .expert-page
+    .container
+      .row
+        .col.sm-3
+          .expert-page__photo
+            img(src="img/expert-1.jpg", alt="")
+            span Anna Kogan, M.D.
+              small Neurology
+        .col.sm-9
+          .expert-page__video: iframe(width="480" height="278" src="https://www.youtube.com/embed/txTqtm58AqM" frameborder="0" allowfullscreen)
+      .row
+        .col.sm-8
+          .expert-page__body
+            p Our Multi-Specialty center is highly rated among the top providers of medical services in Brooklyn. We offer the most innovative, up-to-date treatments to deal with full range of neurological diseases and disorders.
+            p We are servicing a Downtown Brooklyn community for over 15 years providing exceptional patient care. Our doctors are working as a team, often handling complicated cases together to the patient benefit.
+            p Patients can receive a full range of neurological services including neuropsychology evaluations, general consultations, stroke checkups and prevention. Treatment is available for issues including facial pain, pain in extremities, sleep problems, cognitive issues, movement issues, and seizures.
+
+            .expert-page__timeline
+              h2 Education
+              ul
+                li 2003–2007 — St. George's University School of Medicine, M.D.
+                li 1999–2002 — New York University, New York, NY
+              h2 Employment
+              ul
+                li 2013 — Downtown Medical Services, Brooklyn, NY
+                li 2012 — Prospect Park Medical Plaza PC, Brooklyn, NY
+                li 2011 — Original Care Medical PC, Brooklyn, NY
+                li 2012 — Upper East Side Medical, New York, NY
+                li 2003 — Vista Alliance. New York, NY
+                li 2002 — New York University, New York, NY
+                li 2001 — Saint Vincent Hospital, New York, NY
+              h2 Clinical Experience
+              ul
+                li 2011–2012 — New York Presbyterian Hospital (Cornell Campus), Hospital for Special Surgery, Neuromuscular Neurology, New Hyde Park, NY
+                li 2010–2011 — Department of Neurology, State University of New York, Stony Brook, NY
+                li 2008–2010 — State University of New York, Stony Brook, NY
+                li 2007–2008 — Department of Medicine, New York- Presbyterian Hospital Weil Medical College of Cornell University New York Hospital Queens, New York
+              h2 Research Experience
+              ul
+                li Conducted prospective study on efficacy of Lacosamide in partial epilepsy with Dr. Mary Andriola and Dr. Rebecca Spiegel Stony Brook Comprehensive Epilepsy Center Stony Brook, NY
+                li The Modified Frenchay Scale Inter and Intra reliability with Jean-Michel Gracies, MD, PhD Dept. of Neurology, Mount Sinai Medical Center, New York, NY
+              h2 Member Of
+              ul
+                li American Board of Psychiatry and Neurology
+              h2 Hospital Affiliations
+              ul
+                li Brooklyn Hospital, Brooklyn, NY
+
+        .col.sm-4
+          .article-page__recent
+            h3 Publications
+            ul
+              li: a(href="#", title="title") Anna Kogan MD, Galina Pushchinska MD, Roberta Seidman, MD
+                small Myopathy in Post-Radiation Cervico-Scapular Syndrome Neurological Bulletin Volume 3, Issue 1 (2011)
+              li: a(href="#", title="title") Narmina Dzhafarova, MD DO, Anna Kogan, MD, Tejwant Bindra, DO, Mary Andriola, MD
+                small Retrospective Analysis of Vagal Nerve Stimulator Effect on the Frequency of Seizures at One, Two and Five Years Post Placement
+              li: a(href="#", title="title") Anna Kogan, MD, Tal Mednick, MD, Maria Dolgovina, MD
+                small Loss of taste as the only cranial nerve finding in Guillain-Barre Syndrome Journal of Clinical Neuromuscular Disease 13(1):56-56, September 2011
+              li: a(href="#", title="title") Anna Kogan, MD, Maria Dolgovina, MD, Galyna Pushchinska, MD, Maria Parr, MD
+                small Can clinical presentation guide in decreasing false positive stroke codes? Neurology Journal
+          .expert-page__list
+            h3 Certifications
+            ul
+              li USMLE I 2005
+              li USMLE II CK 2006
+              li USMLE II CS 2006
+              li USMLE III 2008
+              li New York State License
+              li ABPN Certified
+      
+      .expert-page__services      
+        h2 Procedures & Services
+        .row
+          .col.sm-4.expert-page__list
+            ul
+              li General Neurology
+              li Stroke (prevention treatment rehabilitation)
+              li Headaches
+              li Dizziness
+              li Memory problems
+              li Cognitive impairment
+              li Neuroimmunology
+          .col.sm-4.expert-page__list
+            ul
+              li Multiple sclerosis
+              li Epilepsy
+              li Neurological Complication of Diabetes
+              li Movement Disorders
+              li Parkinson's Disease
+              li Stress and Fatigue Syndrome
+              li Tremors and Weakness
+          .col.sm-4.expert-page__list
+            ul
+              li Visual Evoked Potentials (VEP)
+              li Brainstem Auditory Evoked Potential (BAEP)
+              li Nerve Conduction Study (NCV)
+              li Electromyogram (EMG)
+              li Transcramial Dopler Study (TCD)
+              li Carotid Dopler (CD)
+              li Neurobehavioral Evaluation 
+      .row.whyus-services
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#") Internal Medicine 
+              small (Primary Care, Family Doctor)
+            li: a(href="#")  Cardiology
+            li: a(href="#")  Ophthalmology
+            li: a(href="#")  Gen & Vas Surgery
+            li: a(href="#")  Gynecology 
+              small (Obstetrician\OBGYN)
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#")  Pulmonology 
+              small (Lungs\Respiratory System)
+            li: a(href="#")  Gastroenterology 
+              small (Endoscopy\Colonoscopy\Biopsy)
+            li: a(href="#")  Urology
+            li: a(href="#")  Orthopedic Surgery
+            li: a(href="#")  Neurology
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#")  Pain Management
+            li: a(href="#")  Podiatry
+            li: a(href="#")  Chiropractic
+            li: a(href="#")  Physical Therapy
+            li: a(href="#")  Dentistry
+

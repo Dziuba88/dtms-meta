@@ -1,0 +1,28 @@
+.label {
+  display: inline-block;
+
+  line-height: 1;
+  vertical-align: middle;
+  padding: 5px .5em;
+
+  user-select: none;
+
+  text-transform: uppercase;
+
+  &.pink {
+    background-color: #5d51a1;
+    color: #fff;
+  }
+  &.red {
+    background-color: #e74542;
+    color: #fff;
+  }
+  &.green {
+    background-color: #31ad56;
+    color: #fff;
+  }
+  &.yellow {
+    background-color: #f1b113;
+    color: #353535;
+  }
+}

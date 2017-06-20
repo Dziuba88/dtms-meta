@@ -1,0 +1,43 @@
+//
+// Navs
+// --------------------------------------------------
+
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &.sidebar-nav {
+    ul {
+      margin-bottom: 40px;
+      li {
+        position: relative;
+        padding: 0 0 10px 20px;
+
+
+        &:before {
+          position: absolute;
+          left: 0;
+          top: .5em;
+          content: '';
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-right: 1px solid #d2d7df;
+          border-top: 1px solid #d2d7df;
+          transform: rotate(45deg);
+        }
+
+        a {
+          color: #717171;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

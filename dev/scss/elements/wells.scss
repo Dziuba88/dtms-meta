@@ -1,0 +1,58 @@
+.home--well {
+  background: url(../img/home-well.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 220px 0;
+  position: relative;
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #353535;
+
+    @media #{$mobile-screen} {
+      font-size: 32px;
+      padding: 0 15px;
+
+    }
+  }
+
+  .show-more {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 40px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid $primary-color;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-right: 1px solid $primary-color;
+      border-bottom: 1px solid $primary-color;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 50%;
+      margin-left: -4px;
+      bottom: 12px;
+    }
+  }
+
+}

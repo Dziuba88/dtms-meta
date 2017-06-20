@@ -1,0 +1,25 @@
+//== Scaffolding
+* {
+  @include box-sizing(border-box);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+  outline: none;
+  
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+
+.tablet__down {
+  display: none;
+
+  @media #{$tablet-down} {
+    display: block;
+  }
+}
+
+.text-right {
+  text-align: right;
+}

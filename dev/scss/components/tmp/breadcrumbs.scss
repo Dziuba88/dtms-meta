@@ -1,0 +1,21 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+
+    &:before {
+      content: " / "; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 5px;
+    }
+
+    &:first-child:before {display: none;}
+  }
+}

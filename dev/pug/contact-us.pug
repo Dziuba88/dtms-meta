@@ -1,0 +1,214 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Contact us'
+block content
+  .page-header
+    .container
+      .row
+        .col.md-10
+          h1 Contact us
+
+  .contacts-page
+    .container
+      // locations tabs
+      ul.nav-tabs(role='tablist')
+        li.active(role='presentation')
+          a(href='#sheepshead', aria-controls='sheepshead', role='tab', data-toggle='tab', aria-expanded="true") 
+            svg.icon: use(xlink:href="#location")
+            span Sheepshead Bay
+        li(role='presentation')
+          a(href='#flatbush', aria-controls='flatbush', role='tab', data-toggle='tab', aria-expanded="false") 
+            svg.icon: use(xlink:href="#location")
+            span Flatbush
+        li(role='presentation')
+          a(href='#brooklyn', aria-controls='brooklyn', role='tab', data-toggle='tab', aria-expanded="false") 
+            svg.icon: use(xlink:href="#location")
+            span Downtown Brooklyn
+
+      // locations panes
+      .tab-content
+        #sheepshead.tab-pane.active
+          .row
+            .col.sm-7: .map-container: img(src="https://dummyimage.com/vga/212121/fdd79c&text=1", alt="")
+            .col.sm-5
+              .contacts-page__adress
+                h3 Sheepshead Bay
+                p 260 Ave X Brooklyn, NY 11223
+                p Phone: 718 336 8855
+                p: a(href="mailto:centurymedicalny@gmail.com") centurymedicalny@gmail.com
+              .contacts-page__directions
+                h4 Directions
+                // directions tabs
+                ul.nav-tabs(role='tablist')
+                  li.active(role='presentation')
+                    a(href='#sheepshead-d1', aria-controls='sheepshead-d1', role='tab', data-toggle='tab', aria-expanded="true") Subway
+                  li(role='presentation')
+                    a(href='#sheepshead-d2', aria-controls='#sheepshead-d2', role='tab', data-toggle='tab', aria-expanded="false") Bus
+                  li(role='presentation')
+                    a(href='#sheepshead-d3', aria-controls='#sheepshead-d3', role='tab', data-toggle='tab', aria-expanded="false") Driving
+                // directions panes
+                .tab-content
+                  #sheepshead-d1.tab-pane.active
+                    p
+                      span.label.pink A
+                      span.label.pink C
+                      span.label.yellow F
+                      span to Jay Street Metro Tech.
+                    p
+                      span.label.yellow R
+                      span to Lawrence Street Metro Tech.
+                    p
+                      span.label.red 2
+                      span.label.red 3
+                      span.label.green 4
+                      span.label.green 5
+                      span to Borough Hall
+                  #sheepshead-d2.tab-pane
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quia possimus non voluptatibus tenetur beatae, at exercitationem sed est eveniet in harum error rerum pariatur, cupiditate omnis similique explicabo fugit!
+                    p
+                      span.label.yellow R
+                      span to Lawrence Street Metro Tech.
+                    p
+                      span.label.red 2
+                      span.label.red 3
+                      span.label.green 4
+                      span.label.green 5
+                      span to Borough Hall
+                  #sheepshead-d3.tab-pane
+                    p
+                      span.label.pink A
+                      span.label.pink C
+                      span.label.yellow F
+                      span to Jay Street Metro Tech.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque, dolorem, debitis quibusdam excepturi mollitia tempora blanditiis sint nisi adipisci ratione dolor vel iste totam voluptates maxime consectetur repellendus! Maiores!
+        #flatbush.tab-pane
+          .row
+            .col.sm-7: .map-container: img(src="https://dummyimage.com/vga/212121/a3ccff&text=2", alt="")
+            .col.sm-5
+              .contacts-page__adress
+                h3 Flatbush
+                p 260 Ave X Brooklyn, NY 11223
+                p Phone: 718 336 8855
+                p: a(href="mailto:centurymedicalny@gmail.com") centurymedicalny@gmail.com
+              .contacts-page__directions
+                h4 Directions
+                // directions tabs
+                ul.nav-tabs(role='tablist')
+                  li.active(role='presentation')
+                    a(href='#flatbush-d1', aria-controls='flatbush-d1', role='tab', data-toggle='tab', aria-expanded="true") Subway
+                  li(role='presentation')
+                    a(href='#flatbush-d2', aria-controls='#flatbush-d2', role='tab', data-toggle='tab', aria-expanded="false") Bus
+                  li(role='presentation')
+                    a(href='#flatbush-d3', aria-controls='#flatbush-d3', role='tab', data-toggle='tab', aria-expanded="false") Driving
+                // directions panes
+                .tab-content
+                  #flatbush-d1.tab-pane.active
+                    p
+                      span.label.pink A
+                      span.label.pink C
+                      span.label.yellow F
+                      span to Jay Street Metro Tech.
+                    p
+                      span.label.yellow R
+                      span to Lawrence Street Metro Tech.
+                    p
+                      span.label.red 2
+                      span.label.red 3
+                      span.label.green 4
+                      span.label.green 5
+                      span to Borough Hall
+                  #flatbush-d2.tab-pane
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quia possimus non voluptatibus tenetur beatae, at exercitationem sed est eveniet in harum error rerum pariatur, cupiditate omnis similique explicabo fugit!
+                    p
+                      span.label.yellow R
+                      span to Lawrence Street Metro Tech.
+                    p
+                      span.label.red 2
+                      span.label.red 3
+                      span.label.green 4
+                      span.label.green 5
+                      span to Borough Hall
+                  #flatbush-d3.tab-pane
+                    p
+                      span.label.pink A
+                      span.label.pink C
+                      span.label.yellow F
+                      span to Jay Street Metro Tech.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque, dolorem, debitis quibusdam excepturi mollitia tempora blanditiis sint nisi adipisci ratione dolor vel iste totam voluptates maxime consectetur repellendus! Maiores!
+        #brooklyn.tab-pane
+          .row
+            .col.sm-7: .map-container: img(src="https://dummyimage.com/vga/212121/cbe6a3&text=3", alt="")
+            .col.sm-5
+              .contacts-page__adress
+                h3 Downtown Brooklyn
+                p 260 Ave X Brooklyn, NY 11223
+                p Phone: 718 336 8855
+                p: a(href="mailto:centurymedicalny@gmail.com") centurymedicalny@gmail.com
+              .contacts-page__directions
+                h4 Directions
+                // directions tabs
+                ul.nav-tabs(role='tablist')
+                  li.active(role='presentation')
+                    a(href='#brooklyn-d1', aria-controls='brooklyn-d1', role='tab', data-toggle='tab', aria-expanded="true") Subway
+                  li(role='presentation')
+                    a(href='#brooklyn-d2', aria-controls='#brooklyn-d2', role='tab', data-toggle='tab', aria-expanded="false") Bus
+                  li(role='presentation')
+                    a(href='#brooklyn-d3', aria-controls='#brooklyn-d3', role='tab', data-toggle='tab', aria-expanded="false") Driving
+                // directions panes
+                .tab-content
+                  #brooklyn-d1.tab-pane.active
+                    p
+                      span.label.pink A
+                      span.label.pink C
+                      span.label.yellow F
+                      span to Jay Street Metro Tech.
+                    p
+                      span.label.yellow R
+                      span to Lawrence Street Metro Tech.
+                    p
+                      span.label.red 2
+                      span.label.red 3
+                      span.label.green 4
+                      span.label.green 5
+                      span to Borough Hall
+                  #brooklyn-d2.tab-pane
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quia possimus non voluptatibus tenetur beatae, at exercitationem sed est eveniet in harum error rerum pariatur, cupiditate omnis similique explicabo fugit!
+                    p
+                      span.label.yellow R
+                      span to Lawrence Street Metro Tech.
+                    p
+                      span.label.red 2
+                      span.label.red 3
+                      span.label.green 4
+                      span.label.green 5
+                      span to Borough Hall
+                  #brooklyn-d3.tab-pane
+                    p
+                      span.label.pink A
+                      span.label.pink C
+                      span.label.yellow F
+                      span to Jay Street Metro Tech.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque, dolorem, debitis quibusdam excepturi mollitia tempora blanditiis sint nisi adipisci ratione dolor vel iste totam voluptates maxime consectetur repellendus! Maiores!
+    .contacts-page__form
+      .container
+        h2 Get in touch
+        form(method="get" action="")#contact-form
+          .row
+            .col.sm-6
+              .input-group
+                label(for='contact-name') Your name *
+                input#contact-name(name="name" type="text" required)
+              .input-group
+                label(for='contact-mail') Your e-mail *
+                input#contact-mail(name="email" type="email" required)
+              .input-group
+                label(for='contact-phone') Your Phone number
+                input#contact-phone(name="phone" type="tel")
+            .col.sm-6
+              .input-group
+                label(for='contact-message') Enter your message here *
+                textarea#contact-message(name="comment" cols="30", rows="10", required)
+
+              .text-right: button.btn-accent(type="submit") Send message
+

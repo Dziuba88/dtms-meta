@@ -1,0 +1,251 @@
+.whyus {
+
+  &-page {
+    border-bottom: 1px solid #d2d7df;
+    padding-bottom: 40px;
+  }
+
+  &--sidebar {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px 40px;
+
+    h3 {
+      margin-top: 0;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .icon {
+          width: 32px;
+          height: 32px;
+          fill: #fff;
+        }
+
+        span {
+          display: block;
+          text-transform: uppercase;
+          padding-left: 20px;
+          font-size: 16px;
+
+          small {
+            font-size: 14px;
+            display: block;
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+
+  &-intro {
+    margin-bottom: 40px;
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-clinic, &-services, &-experts {
+    margin-bottom: 40px;
+  }
+
+  &-experts__item {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    span {
+      font-family: $headings-font;
+      display: block;
+      background-color: rgba($primary-color, .9);
+      color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px;
+      z-index: 2;
+      transition: $animation-fast;
+      font-size: 18px;
+
+      small {
+        display: block;
+        font-size: 14px;
+      }
+    }
+  }
+  a:hover span {
+    background-color: $primary-color;
+  }
+}
+
+.expert {
+  &-page {
+    border-bottom: 1px solid #d2d7df;
+
+    &__body {
+      padding-right: 60px;
+      margin-bottom: 40px;
+
+      @media #{$tablet-down} {
+        padding-right: 0;
+      }
+    }
+
+    &__video {
+      margin-bottom: 40px;
+      iframe {
+        max-width: 100%;
+      }
+    }
+
+    &__photo {
+      position: relative;
+      display: block;
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+
+      span {
+        font-family: $headings-font;
+        display: block;
+        background-color: rgba($primary-color, .9);
+        color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        z-index: 2;
+        transition: $animation-fast;
+        font-size: 18px;
+
+        small {
+          display: block;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__timeline {
+      margin: 40px 0;
+      padding: 40px;
+      background-color: #f1f3f5;
+      border-radius: 8px;
+
+      ul + h2 {
+        margin-top: 40px;
+      }
+
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: #717171;
+
+        li {
+          margin-bottom: 20px;
+          font-size: 14px;
+          position: relative;
+          padding-left: 1em;
+
+
+          &:before {
+            position: absolute;
+            left: 0;
+            top: .5em;
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-right: 1px solid #d2d7df;
+            border-top: 1px solid #d2d7df;
+            transform: rotate(45deg);
+            margin-right: 10px;
+
+          }
+        }
+      }
+    }
+
+    &__list {
+
+      h3 {
+        padding-top: 30px;
+      }
+      
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin-bottom: 20px;
+          font-size: 14px;
+          position: relative;
+          padding-left: 1em;
+
+
+          &:before {
+            position: absolute;
+            left: 0;
+            top: .5em;
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-right: 1px solid #d2d7df;
+            border-top: 1px solid #d2d7df;
+            transform: rotate(45deg);
+            margin-right: 10px;
+
+          }
+        }
+      }
+    }
+
+    &__services {
+      border-bottom: 1px solid #d2d7df;
+      padding: 40px 0;
+      margin-bottom: 40px;
+    }
+
+
+
+
+
+
+
+  }
+}

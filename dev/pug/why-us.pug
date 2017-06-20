@@ -1,0 +1,107 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Why us'
+block content
+  .page-header
+    .container
+      .row
+        .col.md-10
+          h1 State-of-the-Art Primary Care Clinic
+          p.uppercase in the heart of MetroTech 
+
+  .whyus-page
+    .container
+      .row.whyus-intro
+        .col.sm-5
+          .whyus--sidebar
+            h3 WE ARE PROUD
+            p We, among many medical clinics, have been chosen to provide medical services to the following colleges:
+            ul
+              li
+                svg.icon: use(xlink:href="#bank")
+                span The Polytechnic Institute of New York University
+                  small (NYU Poly)
+              li
+                svg.icon: use(xlink:href="#bank")
+                span ASA College
+                  small (ASA Institute-Bus & Computer)
+              li
+                svg.icon: use(xlink:href="#bank")
+                span CUNY City Tech
+                  small (New York City College of Technology)
+        .col.sm-7
+          p Thank you for choosing Downtown Medical Services, a collaborative clinic that gives busy individuals a personalized, measurable healthcare strategy to enhance their physical and mental performance.
+          p It is our privilege to be your local healthcare provider. Our mission is to understand your needs, maintain a high level of one-on-one care, and improve the quality of life for our community. We look forward to seeing you soon.
+          p Our unique approach to healthcare and lifestyle management enables our patients to achieve peak performance of both mind and body.
+          p Our state-of-the-art clinic is located in the heart of MetroTech at 81 Willoughby Street in Downtown Brooklyn, NY. Our unparalleled executive healthcare facility includes a fully equipped rehabilitation facility, as well as 10 rooms to serve doctors working at our facility, true specialists in:        
+
+      .whyus-clinic
+        h2 Our Clinic — Your Clinic
+        .row
+          .col.sm-4
+            .whyus-clinic__item
+              p: img(src="https://dummyimage.com/vga/212121/66645b", alt="")
+              p A state-of-the-art medical facility that includes the best in strength training and cardiovascular equipment
+              p: a(href="#", title="Read more").readmore Read more
+          .col.sm-4
+            .whyus-clinic__item
+              p: img(src="https://dummyimage.com/vga/212121/ada6a0", alt="")
+              p Our management focuses on discovering, perfecting and implementing the best practices. We make sure our medical professionals will be among the most informed in the country.
+              p: a(href="#", title="Read more").readmore Read more
+          .col.sm-4
+            .whyus-clinic__item
+              p: img(src="https://dummyimage.com/vga/212121/a69f8d", alt="")
+              p Our Stuff will be working closely with you to make sure you have an exceptional care and services that you deserve.
+              p: a(href="#", title="Read more").readmore Read more
+
+      hr
+      .row.whyus-services
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#") Internal Medicine 
+              small (Primary Care, Family Doctor)
+            li: a(href="#")  Cardiology
+            li: a(href="#")  Ophthalmology
+            li: a(href="#")  Gen & Vas Surgery
+            li: a(href="#")  Gynecology 
+              small (Obstetrician\OBGYN)
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#")  Pulmonology 
+              small (Lungs\Respiratory System)
+            li: a(href="#")  Gastroenterology 
+              small (Endoscopy\Colonoscopy\Biopsy)
+            li: a(href="#")  Urology
+            li: a(href="#")  Orthopedic Surgery
+            li: a(href="#")  Neurology
+        nav.col.sm-4
+          ul.locations__services
+            li: a(href="#")  Pain Management
+            li: a(href="#")  Podiatry
+            li: a(href="#")  Chiropractic
+            li: a(href="#")  Physical Therapy
+            li: a(href="#")  Dentistry
+      .whyus-experts
+        h2 Our experts
+        .row
+          .col.sm-3
+            a(href="neurology.html", title="title").whyus-experts__item
+              img(src="img/expert-1.jpg", alt="")
+              span Anzhela Dvorkina, MD
+                small Internal Medicine
+          .col.sm-3
+            a(href="#", title="title").whyus-experts__item
+              img(src="img/expert-2.jpg", alt="")
+              span Alexander Lipyansky, MD
+                small Urology
+          .col.sm-3
+            a(href="#", title="title").whyus-experts__item
+              img(src="img/expert-3.jpg", alt="")
+              span Irina Mikheyeva, MD, DO
+                small Gynecology
+          .col.sm-3
+            a(href="#", title="title").whyus-experts__item
+              img(src="img/expert-4.jpg", alt="")
+              span Eric Dessner, MD
+                small Ophthalmology

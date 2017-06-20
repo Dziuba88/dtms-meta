@@ -1,0 +1,16 @@
+//== Scaffolding
+* {
+  @include box-sizing(border-box);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+  
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+
+.transition {
+  @include transition(all .25s cubic-bezier(0.455, 0.030, 0.515, 0.955));
+}

@@ -1,0 +1,42 @@
+.locations {
+  margin-bottom: 40px;
+
+  &-page {
+    border-bottom: 1px solid #d2d7df;
+    padding-bottom: 40px;
+  }
+  &__services {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+
+    li {
+      color: $primary-color;
+      font-size: 16px;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 20px;
+
+      small {
+        display: block;
+        font-size: 14px;
+        color: #717171;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-right: 1px solid $primary-color;
+        border-top: 1px solid $primary-color;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -4px;
+      }
+    }
+  }
+}

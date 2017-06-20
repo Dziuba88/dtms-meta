@@ -1,0 +1,207 @@
+.navbar {
+  font-size: 18px;
+  font-family: $headings-font;
+  padding: 0;
+  text-transform: uppercase;
+
+  &-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0 0 0 auto;
+    background-color: #fff;
+    border: 2px solid $primary-color;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: $primary-color;
+    }
+
+    &.active, &:hover {
+      border: 2px solid $secondary-color;
+      
+      svg {
+        fill: $secondary-color;
+      }
+    }
+
+    @media #{$tablet-down} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+
+    ul {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+
+        &:first-child {display: none;}
+
+        &.tablet__down {
+          padding-top: 10px;
+        }
+
+        a {
+          display: block;
+          padding: 20px;
+
+          &.btn-call {
+            display: flex;
+            padding: 0;
+          }
+
+          &.btn-chat {
+            padding: 15px;
+          }
+          
+        }
+
+        &.active {
+          a {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+
+      }
+    }
+
+
+    @media #{$tablet-down} {
+      display: none;
+
+      ul {
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+a.brand {
+  display: block;
+
+  svg {
+    max-width: 100%;
+  }
+}
+.location {
+  width: 100%;
+  margin-bottom: 10px;
+
+  &-icon {
+    width: 20px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: $primary-color;
+  }
+
+}
+
+
+.btn-call {
+	display: flex;
+  line-height: 1;
+
+	&:before {
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		content: attr(title);
+		padding: 15px 20px;
+		border-radius: 8px 0 0 8px;
+		color: #FFF;
+		background-color: $secondary-color;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	span {
+    flex:1;
+		display: block;
+		padding: 15px 20px;
+		color: #FFF;
+		background-color: $primary-color;
+		border-radius: 0 8px 8px 0;
+		font-size: 24px;
+    text-align: center;
+	}
+
+  &:hover {
+    opacity: .75;
+  }
+
+
+  @media #{$tablet-down} {
+    margin-bottom: 20px;
+    display: flex;
+    &:before, span {padding: 15px;}
+    &:before {font-size: 16px;}
+    span {font-size: 24px;}
+  }
+
+}
+
+
+.btn-chat {
+  display: block;
+  padding: 15px 40px;
+  color: #FFF;
+  background-color: $accent-color;
+  border-radius: 8px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1;
+
+  &:hover {
+    opacity: .75;
+    color: #fff;
+  }
+
+  @media #{$tablet-down} {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  @media #{$mobile-screen} {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+
+.buttons-wraper {
+  color: #717171;
+  @media #{$mobile-screen} {
+    display: none;
+  }
+}
+
+
+header .row.middle.between {
+  margin: 0;
+
+  @media #{$tablet-down} {
+    display: none;
+  }
+}

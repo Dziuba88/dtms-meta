@@ -1,0 +1,80 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Blog'
+block content
+  .page-header
+    .container
+      .row
+        .col.md-10
+          h1 Blog
+
+  .blog-page
+    .container
+      .row
+        .col.sm-8
+          .blog-list
+            - for (var i=1; i<=3; i++)
+              article.blog-list__item
+                a(href="blog-article.html"): img(src="https://dummyimage.com/vga", alt="Trichomoniasis – Why Routine STD/STI Testing Is Important")
+                h2: a(href="blog-article.html") Trichomoniasis – Why Routine STD/STI Testing Is Important
+                p What Is Trichomoniasis? Trichomoniasis is a parasitic infection which can be sexually transmitted. It affects both man and women. It is one of the most widespread STD-s, but also one of the most easily curable. Trichomoniasis, also known as “Trich” is caused by Trichomonas Vaginalis. Through heterosexual transmission people are mostly infected with this parasite.
+                .blog-list__item-footer
+                  a(href="blog-article.html").btn-accent Read the full post
+                  span.total-comments 
+                    svg.icon: use(xlink:href="#comment")
+                    span #{i + 25}
+          .blog-list
+          a(href="#", title="title").btn-normal
+            svg.icon: use(xlink:href="#arrow-left")
+            span Older posts
+
+
+
+
+
+
+        .col.sm-4
+          .blog-page__comments
+            h3 Recent Comments
+            ul
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Trichomoniasis – Why Routine STD/STI Testing Is Important
+                  small — Ashly
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") What Are Nabothian Cysts and How Are They Treated?
+                  small — Nick
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Uterine Fibroids: Are They a Potential Danger to Every Woman?
+                  small — Samantha
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Downtown Medical Services: Urinary Tract Infections Prevention
+                  small — Jason
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Syphilis: What Do You Know about Sexually Transmitted Diseases?
+                  small — Tamara
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Trichomoniasis – Why Routine STD/STI Testing Is Important
+                  small — Ashly
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") What Are Nabothian Cysts and How Are They Treated?
+                  small — Nick
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Uterine Fibroids: Are They a Potential Danger to Every Woman?
+                  small — Samantha
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Downtown Medical Services: Urinary Tract Infections Prevention
+                  small — Jason
+              li
+                svg.icon: use(xlink:href="#comment")
+                a(href="") Syphilis: What Do You Know about Sexually Transmitted Diseases?
+                  small — Tamara

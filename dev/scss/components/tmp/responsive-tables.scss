@@ -1,0 +1,184 @@
+/* -- Material Design Table style -------------- */
+.material-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $gutter-width;
+  background-color: #fff;
+  @include shadow($shadow-z-1);
+  
+
+  > thead > tr, > tbody > tr, > tfoot > tr {
+    @include transition($base-transition);
+  }
+
+  > thead > tr > th,
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > thead > tr > td,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    text-align: left;
+    padding: 1.6em;
+    vertical-align: top;
+    border-top: 0;
+    @include transition($base-transition);
+  }
+
+  > thead > tr > th {
+    font-weight: 500;
+    font-size: .75em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  > caption + thead > tr:first-child > th,
+  > colgroup + thead > tr:first-child > th,
+  > thead:first-child > tr:first-child > th,
+  > caption + thead > tr:first-child > td,
+  > colgroup + thead > tr:first-child > td,
+  > thead:first-child > tr:first-child > td {
+    border-top: 0;
+  }
+
+  > tbody + tbody {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  & & {
+    background-color: #fff;
+  }
+
+  &.no-border {
+    border: 0;
+  }
+
+  &.condensed > thead > tr > th,
+  &.condensed > tbody > tr > th,
+  &.condensed > tfoot > tr > th,
+  &.condensed > thead > tr > td,
+  &.condensed > tbody > tr > td,
+  &.condensed > tfoot > tr > td {
+    padding: 0.8rem;
+  }
+  &.bordered {
+    border: 0;
+
+    > thead > tr > th,
+    > tbody > tr > th,
+    > tfoot > tr > th,
+    > thead > tr > td,
+    > tbody > tr > td,
+    > tfoot > tr > td {
+      border: 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    > thead > tr > th,
+    > thead > tr > td {
+      border-bottom-width: 2px;
+    }
+  }
+
+  &.striped > tbody > tr:nth-child(odd) > td,
+  &.striped > tbody > tr:nth-child(odd) > th {
+    background-color: #f5f5f5;
+  }
+
+  &.hover > tbody > tr:hover > td,
+  &.hover > tbody > tr:hover > th {
+    background-color: rgba($primary-color, 0.1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media #{$grid-float} {
+  .responsive-vertical > .material-table {
+    margin-bottom: 0;
+    background-color: transparent;
+    @include shadow(none);
+
+    > thead, > tfoot {display: none;}
+
+    > tbody {display: block;}
+
+    > tbody > tr {
+      display: block;
+      border: none;
+      @include shadow($shadow-z-1);
+      margin-bottom: 1.6rem;
+    }
+
+    > tbody > tr > td {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: right;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      width: 100%;
+      position: relative;
+    }
+
+    > tbody > tr > td[data-title]:before {
+      content: attr(data-title);
+      font-size: .75em;
+      text-transform: uppercase;
+      padding-right: 10px;
+      flex: none;
+      opacity: .8;
+      text-align: left;
+      width: 30%;
+    }
+    > tbody > tr > td[data-title=" "]:before {display: none;}
+
+    &.bordered {
+      border: 0;
+
+      > tbody > tr > td {
+        border: 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      > tbody > tr > td:last-child {
+        border-bottom: 0;
+      }
+    }
+    &.striped > tbody > tr > td,
+    &.striped > tbody > tr:nth-child(odd) {
+      background-color: #fff;
+    }
+    &.striped > tbody > tr > td:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+    &.hover > tbody > tr:hover > td,
+    &.hover > tbody > tr:hover {
+      background-color: #fff;
+    }
+    &.hover > tbody > tr > td:hover {
+      background-color: rgba($primary-color, .1);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.panel {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: $gutter-width;
+    @include shadow($shadow-z-1);
+
+    &-heading {
+      border-bottom: 1px solid rgba(0,0,0,.12);
+      padding: ($gutter-width / 2) $gutter-width;
+      
+      h3 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        text-transform: uppercase;
+        opacity: .75;
+        font-weight: 400;
+
+        * {margin: 0 .5em;}
+      }
+    }
+    &-body {
+      padding: ($gutter-width / 2) $gutter-width;
+    }
+}

@@ -1,0 +1,155 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Home'
+block content
+  .home--well
+    h1 We Care About You<br>And Your Health  
+    a(href="#").show-more More
+  .services
+    .container.flexed
+      .row.stretch
+        a(href="service.html", title="Primary Care facility").services__panel
+          span.services__panel--title Primary Care facility
+          span.services__panel--intro New concept of providing comprehensive acute and chronic medical care, urgent care for the entire family.
+        a(href="#", title="Cosmetics, Fillers & Botox").services__panel
+          span.services__panel--title Cosmetics, Fillers & Botox
+          span.services__panel--intro Skincare solutions from skincare experts. Enter the world of professional skincare treatments...
+        a(href="#", title="sleep & feel better").services__panel
+          span.services__panel--title sleep & feel better
+          span.services__panel--intro We are using innovative methods for the care and wellness of the ear, nose, throat and parts of the head and neck.
+        a(href="#", title="Expert Dentistry").services__panel
+          span.services__panel--title Expert Dentistry
+          span.services__panel--intro From teeth whitening to full mouth reconstruction, We cover all the bases to produce healthy, quality smiles. A new world of treatments require a bit less bravery.
+  .locations
+    .container
+      // locations tabs
+      ul.nav-tabs(role='tablist')
+        li.active(role='presentation')
+          a(href='#sheepshead', aria-controls='sheepshead', role='tab', data-toggle='tab', aria-expanded="true") 
+            svg.icon: use(xlink:href="#location")
+            span Sheepshead Bay
+        li(role='presentation')
+          a(href='#flatbush', aria-controls='flatbush', role='tab', data-toggle='tab', aria-expanded="false") 
+            svg.icon: use(xlink:href="#location")
+            span Flatbush
+        li(role='presentation')
+          a(href='#brooklyn', aria-controls='brooklyn', role='tab', data-toggle='tab', aria-expanded="false") 
+            svg.icon: use(xlink:href="#location")
+            span Downtown Brooklyn
+
+      // locations panes
+      .tab-content
+        #sheepshead.tab-pane.active
+          .row
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#") Internal Medicine 
+                  small (Primary Care, Family Doctor)
+                li: a(href="#")  Cardiology
+                li: a(href="#")  Ophthalmology
+                li: a(href="#")  Gen & Vas Surgery
+                li: a(href="#")  Gynecology 
+                  small (Obstetrician\OBGYN)
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pulmonology 
+                  small (Lungs\Respiratory System)
+                li: a(href="#")  Gastroenterology 
+                  small (Endoscopy\Colonoscopy\Biopsy)
+                li: a(href="#")  Urology
+                li: a(href="#")  Orthopedic Surgery
+                li: a(href="#")  Neurology
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pain Management
+                li: a(href="#")  Podiatry
+                li: a(href="#")  Chiropractic
+                li: a(href="#")  Physical Therapy
+                li: a(href="#")  Dentistry
+
+        #flatbush.tab-pane
+          .row
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Internal Medicine 
+                  small (Primary Care, Family Doctor)
+                li: a(href="#")  Cardiology
+                li: a(href="#")  Ophthalmology
+                li: a(href="#")  Gen & Vas Surgery
+                li: a(href="#")  Gynecology 
+                  small (Obstetrician\OBGYN)
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pain Management
+                li: a(href="#")  Podiatry
+                li: a(href="#")  Chiropractic
+                li: a(href="#")  Physical Therapy
+                li: a(href="#")  Dentistry
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pulmonology 
+                  small (Lungs\Respiratory System)
+                li: a(href="#")  Gastroenterology 
+                  small (Endoscopy\Colonoscopy\Biopsy)
+                li: a(href="#")  Urology
+                li: a(href="#")  Orthopedic Surgery
+                li: a(href="#")  Neurology
+
+        #brooklyn.tab-pane
+          .row
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pain Management
+                li: a(href="#")  Podiatry
+                li: a(href="#")  Chiropractic
+                li: a(href="#")  Physical Therapy
+                li: a(href="#")  Dentistry
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Internal Medicine 
+                  small (Primary Care, Family Doctor)
+                li: a(href="#")  Cardiology
+                li: a(href="#")  Ophthalmology
+                li: a(href="#")  Gen & Vas Surgery
+                li: a(href="#")  Gynecology 
+                  small (Obstetrician\OBGYN)
+            nav.col.sm-4
+              ul.locations__services
+                li: a(href="#")  Pulmonology 
+                  small (Lungs\Respiratory System)
+                li: a(href="#")  Gastroenterology 
+                  small (Endoscopy\Colonoscopy\Biopsy)
+                li: a(href="#")  Urology
+                li: a(href="#")  Orthopedic Surgery
+                li: a(href="#")  Neurology
+  .about-us
+    .container
+      .row.bottom
+        .about-us__intro.col.sm-7.order-sm-2
+          h2 WELCOME YOU TO OUR FAMILY
+          p Downtown Medical Services clinic is a Multi-Specialty Clinic located in the center of Metrotech Downtown Brooklyn on 81 Willoughby Street, 4 floor. We service our community for the past 16 years. From small one-doctor office in 1997 we grow-up to the Multi-Specialty clinic where we have 16 highly qualified physicians, Physical therapy and diagnostic department.
+          p: a(href="#", title="Primary Care Facility").btn-about Primary Care Facility
+        .col.sm-5.order-sm-1: img(src="img/about-us-photo.png", alt="")
+  .global-services
+    .global-services__panel
+      .img-to-bg: img(src="img/service-1.jpg", alt="")
+      h3 General Medical Services
+      p Exceptional care and services in the heart of MetroTech
+      a(href="#", title="title").btn-accent INTERNAL MEDICINE
+    .global-services__panel
+      .img-to-bg: img(src="img/service-2.jpg", alt="")
+      h3 Modern Diagnostic Services
+      p We have the right technology in place and trained staff to help you
+      a(href="#", title="title").btn-accent SERVICES
+    .global-services__panel
+      .img-to-bg: img(src="img/service-3.jpg", alt="")
+      h3 Physical Rehabilitation
+      p We are dedicated to help you to maintain a healthy lifestyle
+      a(href="#", title="title").btn-accent PHYSICAL THERAPY
+    .global-services__panel
+      .img-to-bg: img(src="img/service-4.jpg", alt="")
+      h3 PRIMARY CARE FACILITY new concept
+      p A comprehensive acute and chronic medical care in the same environment, with maintenance in continuity of care and physician-patient relationship
+      a(href="#", title="title").btn-accent SERVICES
+

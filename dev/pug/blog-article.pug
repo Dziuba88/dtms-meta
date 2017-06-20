@@ -1,0 +1,91 @@
+extends layouts/default
+block vars
+  - title = 'CENTURY'
+  - active__menu = 'Blog'
+block content
+  .page-header
+    .container
+      .row
+        .col.md-10
+          h1 Trichomoniasis – Why Routine STD/STI Testing Is Important
+
+  .article-page
+    .container
+      .row
+        .col.sm-8
+          .article-body
+            img(src="https://dummyimage.com/vga", alt="Trichomoniasis – Why Routine STD/STI Testing Is Important")
+            h2 What Is Trichomoniasis?
+            p Trichomoniasis is a parasitic infection which can be sexually transmitted. It affects both man and women. It is one of the most widespread STD-s, but also one of the most easily curable. Trichomoniasis, also known as “Trich” is caused by Trichomonas Vaginalis. Through heterosexual transmission people are mostly infected with this parasite. The infection rarely affects other parts of the human body, so it can be found on the vulva, vagina, vaginal lips and urethra.
+            h2 Signs and Symptoms of Trichomoniasis
+            p In most of the cases the infection is asymptomatic. In cases when signs and symptoms do occur they are present a short period after the infection. The incubation period usually is 5 – 28 days. However, in some cases the signs and symptoms of trichomoniasis appear much later. Signs and symptoms usually include:
+            ul
+              li Itching on the genital area
+              li Redness
+              li Sore vulva
+              li Painful urination
+              li Vaginal discharge that might vary in color from green to yellow,
+              li Discomfort during sexual intercourse,
+              li Lower abdominal or pelvic pain, etc.
+            p The infection if not diagnosed and treated on time will remain in the human body even for years. Possible long term complications of trichomoniasis infection include a higher risk of preterm birth, low birth weight for babies, but also a higher vulnerability to other sexually transmitted diseases, including HIV.
+            .article-footer
+              span.posted-time Posted on August 10, 2015
+              .row.between
+                a(href="#", title="title").btn-normal
+                  svg.icon: use(xlink:href="#arrow-left")
+                  span Previous post
+                a(href="#", title="title").btn-normal
+                  span Next post
+                  svg.icon: use(xlink:href="#arrow-right")
+            .article-comments
+              h2 Comments
+              .blog-page__comments
+                ul
+                  li
+                    svg.icon: use(xlink:href="#comment")
+                    span Trichomoniasis – Why Routine STD/STI Testing Is Important
+                      small — Ashly |  August 10, 2015  8:25 am
+                  li
+                    svg.icon: use(xlink:href="#comment")
+                    span What Are Nabothian Cysts and How Are They Treated?
+                      small — Nick |  August 10, 2015  8:25 am
+                  li
+                    svg.icon: use(xlink:href="#comment")
+                    span Uterine Fibroids: Are They a Potential Danger to Every Woman?
+                      small — Samantha |  August 10, 2015  8:25 am
+                  li
+                    svg.icon: use(xlink:href="#comment")
+                    span Downtown Medical Services: Urinary Tract Infections Prevention
+                      small — Jason |  August 10, 2015  8:25 am
+                .blog-page__comments-form
+                  h2 Leave a reply 
+                  form(method="get" action="")#contact-form
+                    .row
+                      .col.sm-6
+                        .input-group
+                          label(for='contact-name') Your name *
+                          input#contact-name(name="name" type="text" required)
+                      .col.sm-6
+                        .input-group
+                          label(for='contact-mail') Your e-mail *
+                          input#contact-mail(name="email" type="email" required)
+                      .col.sm-12
+                        .input-group
+                          label(for='contact-message') Enter your message here *
+                          textarea#contact-message(name="comment" cols="30", rows="10", required)
+
+                        button.btn-accent(type="submit") Reply
+        .col.sm-4
+          .article-page__recent
+            h3 Recent Posts
+            ul
+              li: a(href="") Trichomoniasis – Why Routine STD/STI Testing Is Important
+              li: a(href="") What Are Nabothian Cysts and How Are They Treated?
+              li: a(href="") Uterine Fibroids: Are They a Potential Danger to Every Woman?
+              li: a(href="") Downtown Medical Services: Urinary Tract Infections Prevention
+              li: a(href="") Syphilis: What Do You Know about Sexually Transmitted Diseases?
+              li: a(href="") Trichomoniasis – Why Routine STD/STI Testing Is Important
+              li: a(href="") What Are Nabothian Cysts and How Are They Treated?
+              li: a(href="") Uterine Fibroids: Are They a Potential Danger to Every Woman?
+              li: a(href="") Downtown Medical Services: Urinary Tract Infections Prevention
+              li: a(href="") Syphilis: What Do You Know about Sexually Transmitted Diseases?
