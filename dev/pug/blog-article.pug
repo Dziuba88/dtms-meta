@@ -63,16 +63,16 @@ block content
                     .row
                       .col.sm-6
                         .input-group
-                          label(for='contact-name') Your name
-                          input#contact-name(name="name" type="text")
+                          label(for='contact-name') Your name *
+                          input#contact-name(name="name" type="text", required)
                       .col.sm-6
                         .input-group
-                          label(for='contact-mail') Your e-mail
-                          input#contact-mail(name="email" type="email")
+                          label(for='contact-mail') Your e-mail *
+                          input#contact-mail(name="email" type="email", required)
                       .col.sm-12
                         .input-group
-                          label(for='contact-message') Enter your message here
-                          textarea#contact-message(name="comment" cols="30", rows="10")
+                          label(for='contact-message') Enter your message here *
+                          textarea#contact-message(name="comment" cols="30", rows="10", required)
 
                         button.btn-accent(type="submit") Reply
                         span.btn-help * Your email address will not be published

@@ -33,3 +33,4 @@ $('.owl-carousel').owlCarousel({
 });
 
 $("#contact-form").validate();
+$("#comment-form").validate();
