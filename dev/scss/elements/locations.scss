@@ -4,6 +4,13 @@
   &-page {
     border-bottom: 1px solid #d2d7df;
     padding-bottom: 40px;
+    .nav-tabs li {
+      flex:1;
+
+      @media #{$mobile-screen} {
+        span {flex:1;}
+      }
+    }
   }
   &__services {
     margin: 0;
