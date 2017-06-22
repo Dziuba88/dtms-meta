@@ -39,4 +39,12 @@
       }
     }
   }
+
+  .nav-tabs li {
+    flex:1;
+
+    @media #{$mobile-screen} {
+      span {flex:1;}
+    }
+  }
 }

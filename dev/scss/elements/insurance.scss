@@ -2,6 +2,8 @@
   &-page {
     border-bottom: 1px solid #d2d7df;
     padding-bottom: 40px;
+
+    ul li {margin-bottom: 20px;}
   }
 
   &-panel {
@@ -13,4 +15,6 @@
       margin: 0;
     }
   }
+
+  
 }

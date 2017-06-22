@@ -1,7 +1,7 @@
 extends layouts/default
 block vars
   - title = 'CENTURY'
-  - active__menu = 'Blog'
+  - active__menu = 'Advice'
 block content
   .page-header
     .container
@@ -24,7 +24,6 @@ block content
                   span.total-comments 
                     svg.icon: use(xlink:href="#comment")
                     span #{i + 25}
-          .blog-list
           a(href="#", title="title").btn-normal
             svg.icon: use(xlink:href="#arrow-left")
             span Older posts

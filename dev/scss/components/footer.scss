@@ -1,6 +1,12 @@
 .footer {
   padding-top: 60px;
 
+  &__last-col {
+    padding-left: 60px;
+
+    @media #{$tablet-down} {padding-left: 15px;}
+  }
+
 
   &__adress {
     display: block;
@@ -99,7 +105,7 @@
     margin: 0 0 10px;
 
     svg {
-      max-width: 100%;
+      width: 100%;
       height: 40px;
     }
   }
@@ -107,6 +113,14 @@
   &__copyrights, &__develop, &__social {
     font-family: $headings-font;
     text-align: right;
+
+    @media #{$mobile-screen} {
+      text-align: center;
+    }
+  }
+
+  &__develop, &__develop a {
+    color: #d2d7df;
   }
 
   &__copyrights {
@@ -121,13 +135,13 @@
 
 
     a {
-      margin: 0 0 0 10px;
+      margin: 0 0 0 15px;
       display: inline-block;
       vertical-align: middle;
       line-height: 1;
       svg {
-        width: 1.7em;
-        height: 1.7em;
+        width: 1.5em;
+        height: 1.5em;
         display: inline-block;
         fill: $primary-color;
         transition: $animation-fast;
@@ -135,7 +149,12 @@
 
       &:first-child svg {
         width: 1.4em;
-        height: 1.4em;
+        height: 1.3em;
+      }
+
+      &:last-child svg {
+        width: 1.8em;
+        height: 1.8em;
       }
 
       &:hover svg {

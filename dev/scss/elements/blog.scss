@@ -3,6 +3,8 @@
     border-bottom: 1px solid #d2d7df;
     padding-bottom: 40px;
 
+    .btn-normal {margin-bottom: 40px;}
+
     &__comments {
       ul {
         display: block;
@@ -42,9 +44,11 @@
         background-color: #f1f3f5;
         padding: 40px;
         border-radius: 8px;
+        font-size: 14px;
 
         .btn-accent {
           padding: 15px 30px;
+          margin-right: 10px;
         }
       }
     }

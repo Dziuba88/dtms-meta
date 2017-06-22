@@ -1,7 +1,7 @@
 extends layouts/default
 block vars
   - title = 'CENTURY'
-  - active__menu = 'Blog'
+  - active__menu = 'Advice'
 block content
   .page-header
     .container
@@ -59,22 +59,23 @@ block content
                       small — Jason |  August 10, 2015  8:25 am
                 .blog-page__comments-form
                   h2 Leave a reply 
-                  form(method="get" action="")#contact-form
+                  form(method="get" action="")#comment-form
                     .row
                       .col.sm-6
                         .input-group
-                          label(for='contact-name') Your name *
-                          input#contact-name(name="name" type="text" required)
+                          label(for='contact-name') Your name
+                          input#contact-name(name="name" type="text")
                       .col.sm-6
                         .input-group
-                          label(for='contact-mail') Your e-mail *
-                          input#contact-mail(name="email" type="email" required)
+                          label(for='contact-mail') Your e-mail
+                          input#contact-mail(name="email" type="email")
                       .col.sm-12
                         .input-group
-                          label(for='contact-message') Enter your message here *
-                          textarea#contact-message(name="comment" cols="30", rows="10", required)
+                          label(for='contact-message') Enter your message here
+                          textarea#contact-message(name="comment" cols="30", rows="10")
 
                         button.btn-accent(type="submit") Reply
+                        span.btn-help * Your email address will not be published
         .col.sm-4
           .article-page__recent
             h3 Recent Posts

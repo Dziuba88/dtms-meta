@@ -190,4 +190,34 @@
       }
     }
   }
+
+  &__tiles {
+    border-top: 1px solid #d2d7df;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    &-item {
+      width: 33.333333333%;
+      padding: 40px;
+      position: relative;
+      border-bottom: 1px solid #d2d7df;
+      border-right: 1px solid #d2d7df;
+
+      &:first-child, &:nth-child(4) {
+        border-left: 1px solid #d2d7df;
+      }
+
+      p {
+        margin: 0;
+      }
+
+
+      @media #{$tablet-down} {
+        width: 100%;
+        border: 1px solid #d2d7df;
+        border-top: none;
+      }
+    }
+  }
 }
