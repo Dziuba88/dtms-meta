@@ -4,9 +4,10 @@ block vars
   - active__menu = 'Home'
 block content
   .home--well
+    img(src="img/home-well.jpg", alt="").image-to-bg
     h1 We Care About You<br>And Your Health  
-    a(href="#").show-more More
-  .services
+    a(href="#anchor").scroll-more More
+  .services#anchor
     .container.flexed
       .row.stretch
         a(href="service.html", title="Primary Care facility").services__panel
